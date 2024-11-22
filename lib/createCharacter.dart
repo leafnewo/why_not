@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 final races=[
-  'human',
-  'crzy',
-  'brad',
-  'lol',
+  ['human','bitch'],
+  ['crzy','outt'],
+  ['brad','hmmm'],
+  ['lol','blur'],
 ];
+int hov=0;
 class createCharacterState extends StatefulWidget {
   const createCharacterState({super.key});
 
@@ -20,36 +21,36 @@ class createCharacterStateState extends State<createCharacterState> {
       appBar: AppBar(title:  const Text("death"),centerTitle: true,),
       body: Container(
         color: const Color.fromARGB(0, 0, 0, 0),
-        child: GridView.count(
-          primary: false,
-          padding: const EdgeInsets.all(20),
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
-          crossAxisCount: 2,
-          children: <Widget>[
-            Positioned.fill(
-              child:ListView.builder(
-                itemCount: races.length-1,
-                shrinkWrap: true,
-                itemBuilder: (context, index) {
-                  return Padding(
-                    padding: const EdgeInsets.only(top:15),
-                    child: Row(
-                    children: [
-                      SizedBox(
-                        width: 100,
-                        height: 100,
-                      )
-                    ],
-                  )
-                  );
-                  
-                },
-              )
-            )
-          ],
+        child: GridView.builder(
+          
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3, // number of items in each row
+            mainAxisSpacing: 8.0, // spacing between rows
+            crossAxisSpacing: 8.0, // spacing between columns
           ),
-      ),
-    );
+          padding: EdgeInsets.all(8.0), // padding around the grid
+          itemCount: races.length, // total number of items
+          itemBuilder: (context, index) {
+            return MouseRegion(
+            onHover:(event) =>{
+              hov=1,
+            },
+            child: Container(
+              color: Colors.blue, // color of grid items
+              child: Center(
+                child: Text(
+                  races[index][0+hov],
+                  style: TextStyle(fontSize: 18.0, color: Colors.white),
+                ),
+              ),
+            )
+            );
+          },
+        )
+      )
+                    
+      
+             
+      );
   }
 }

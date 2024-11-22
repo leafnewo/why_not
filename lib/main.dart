@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:why_not/charectorScreen.dart';
 import 'package:why_not/mapSystem.dart';
-
+import 'createCharacter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -47,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Death"), centerTitle: true,
         leading: IconButton(icon: const Icon(Icons.menu), onPressed: (){
           Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const mapSystem()));
+          context, MaterialPageRoute(builder: (context) => const charectorScreen()));
         },),
       ),
       body: const Center(/*
