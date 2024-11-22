@@ -45,20 +45,37 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Death"), centerTitle: true,
-        leading: IconButton(icon: Icon(Icons.menu), onPressed: (){
+        leading: IconButton(icon: const Icon(Icons.menu), onPressed: (){
           Navigator.push(
-          context, MaterialPageRoute(builder: (context) => mapSystem()));
+          context, MaterialPageRoute(builder: (context) => const mapSystem()));
         },),
-        
-
-        
       ),
-      body: Center(
+      body: const Center(/*
      
         child: Column(
+          children:[
+            Stack(
+              children: <Widget>[
+                Positioned(
+                child: GestureDetector(
+                  onTap: (){
+
+                  },
+                  child: Container(
+                    width: 100,
+                    height: 100,
+                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                    alignment: Alignment.centerLeft,
+                    color: Color.fromARGB(138, 185, 35, 35),
+                  ),
+
+                ),
+              ),
+            ],
+            )
+          ],*/
      
         )
-      )
-    );
+      );
   }
 }

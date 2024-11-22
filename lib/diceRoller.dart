@@ -17,17 +17,17 @@ class diceRoller extends StatelessWidget {
           margin: const EdgeInsets.all(10),
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: Color.fromARGB(255, 0, 170, 255),
+            color: const Color.fromARGB(255, 0, 170, 255),
             borderRadius: BorderRadius.circular(10),
             //shape: BoxShape.circle,
           ),
           child: RichText(
             text: TextSpan(
-              text: '${rolledNumber}',
-              style: TextStyle(
+              text: '$rolledNumber',
+              style: const TextStyle(
                 fontSize: 100,
                 fontWeight: FontWeight.bold, 
-                color: const Color.fromARGB(174, 207, 37, 165))),
+                color: Color.fromARGB(174, 207, 37, 165))),
           )
         )
     );

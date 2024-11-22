@@ -19,17 +19,17 @@ class ItemDes extends StatelessWidget {
               margin: const EdgeInsets.all(10),
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 0, 170, 255),
+                color: const Color.fromARGB(255, 0, 170, 255),
                 borderRadius: BorderRadius.circular(10),
                 //shape: BoxShape.circle,
               ),
               child: RichText(
               text: TextSpan(
                 text: '${theItem[0]}',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 100,
                   fontWeight: FontWeight.bold, 
-                  color: const Color.fromARGB(174, 207, 37, 165))),
+                  color: Color.fromARGB(174, 207, 37, 165))),
               )
             ),
             Positioned(
@@ -41,17 +41,17 @@ class ItemDes extends StatelessWidget {
                 margin: const EdgeInsets.all(10),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 0, 170, 255),
+                  color: const Color.fromARGB(255, 0, 170, 255),
                   borderRadius: BorderRadius.circular(10),
                   //shape: BoxShape.circle,
                 ),
                 child: RichText(
                 text: TextSpan(
                   text: '$count',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 10,
                     fontWeight: FontWeight.bold, 
-                    color: const Color.fromARGB(174, 207, 37, 165))),
+                    color: Color.fromARGB(174, 207, 37, 165))),
                 )
               ),
             ),
@@ -68,7 +68,7 @@ class ItemDes extends StatelessWidget {
                   margin: const EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 116, 235, 5),
+                    color: const Color.fromARGB(255, 116, 235, 5),
                     borderRadius: BorderRadius.circular(10),
                     //shape: BoxShape.circle,
                   ),
@@ -89,7 +89,7 @@ class ItemDes extends StatelessWidget {
                   margin: const EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 255, 0, 0),
+                    color: const Color.fromARGB(255, 255, 0, 0),
                     borderRadius: BorderRadius.circular(10),
                     //shape: BoxShape.circle,
                   ),

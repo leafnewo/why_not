@@ -74,7 +74,7 @@ final races =[
 
 
 class charectorScreen extends StatefulWidget {
-  charectorScreen({super.key,});
+  const charectorScreen({super.key,});
   
 
 
@@ -375,18 +375,18 @@ class _charectorScreenState extends State<charectorScreen> {
                     Container(
                       width: statnumwith,
                       height: 650,
-                      padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                      padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                       alignment: Alignment.centerLeft,
-                      color: Color.fromARGB(255, 90, 61, 61),                           
+                      color: const Color.fromARGB(255, 90, 61, 61),                           
                     ), 
                     Positioned(
                       top: 0,
                       child: Container(
                         width: statnumwith,
                         height: statnumhigh,
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                         alignment: Alignment.centerLeft,
-                        color: Color.fromARGB(255, 28, 155, 81),
+                        color: const Color.fromARGB(255, 28, 155, 81),
                         child: RichText(                            
                           text: TextSpan(
                             text: 'Strength', style: TextStyle(
@@ -398,10 +398,10 @@ class _charectorScreenState extends State<charectorScreen> {
                       top:0,
                       right: 10,                          
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         width: 90,
                         height: 90,
-                        color: Color.fromARGB(255, 9, 6, 61),                                                        
+                        color: const Color.fromARGB(255, 9, 6, 61),                                                        
                         child: TextField(                        
                           maxLength: 3,
                           keyboardType: TextInputType.number,
@@ -427,9 +427,9 @@ class _charectorScreenState extends State<charectorScreen> {
                       child: Container(
                         width: statnumwith,
                         height: statnumhigh,
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                         alignment: Alignment.centerLeft,
-                        color: Color.fromARGB(255, 28, 155, 81),
+                        color: const Color.fromARGB(255, 28, 155, 81),
                         child: RichText(                            
                           text: TextSpan(
                             text: 'Agility', style: TextStyle(
@@ -441,10 +441,10 @@ class _charectorScreenState extends State<charectorScreen> {
                       top:110,
                       right: 10,                          
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         width: 90,
                         height: 90,
-                        color: Color.fromARGB(255, 9, 6, 61),                                                        
+                        color: const Color.fromARGB(255, 9, 6, 61),                                                        
                         child: TextField(                              
                           maxLength: 3,
                           keyboardType: TextInputType.number,
@@ -470,9 +470,9 @@ class _charectorScreenState extends State<charectorScreen> {
                       child: Container(
                         width: statnumwith,
                         height: statnumhigh,
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                         alignment: Alignment.centerLeft,
-                        color: Color.fromARGB(255, 28, 155, 81),
+                        color: const Color.fromARGB(255, 28, 155, 81),
                         child: RichText(                            
                           text: TextSpan(
                             text: 'Arcana', style: TextStyle(
@@ -484,10 +484,10 @@ class _charectorScreenState extends State<charectorScreen> {
                       top:220,
                       right: 10,                          
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         width: 90,
                         height: 90,
-                        color: Color.fromARGB(255, 9, 6, 61),                                                        
+                        color: const Color.fromARGB(255, 9, 6, 61),                                                        
                         child: TextField(                              
                           maxLength: 3,
                           keyboardType: TextInputType.number,
@@ -513,9 +513,9 @@ class _charectorScreenState extends State<charectorScreen> {
                       child: Container(
                         width: statnumwith,
                         height: statnumhigh,
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                         alignment: Alignment.centerLeft,
-                        color: Color.fromARGB(255, 28, 155, 81),
+                        color: const Color.fromARGB(255, 28, 155, 81),
                         child: RichText(                            
                           text: TextSpan(
                             text: 'Endurance', style: TextStyle(
@@ -527,10 +527,10 @@ class _charectorScreenState extends State<charectorScreen> {
                       top:330,
                       right: 10,                          
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         width: 90,
                         height: 90,
-                        color: Color.fromARGB(255, 9, 6, 61),                                                        
+                        color: const Color.fromARGB(255, 9, 6, 61),                                                        
                         child: TextField(                              
                           maxLength: 3,
                           keyboardType: TextInputType.number,
@@ -556,9 +556,9 @@ class _charectorScreenState extends State<charectorScreen> {
                       child: Container(
                         width: statnumwith,
                         height: statnumhigh,
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                         alignment: Alignment.centerLeft,
-                        color: Color.fromARGB(255, 28, 155, 81),
+                        color: const Color.fromARGB(255, 28, 155, 81),
                         child: RichText(                            
                           text: TextSpan(
                             text: 'Mind', style: TextStyle(
@@ -570,10 +570,10 @@ class _charectorScreenState extends State<charectorScreen> {
                       top:440,
                       right: 10,                          
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         width: 90,
                         height: 90,
-                        color: Color.fromARGB(255, 9, 6, 61),                                                        
+                        color: const Color.fromARGB(255, 9, 6, 61),                                                        
                         child: TextField(                              
                           maxLength: 3,
                           keyboardType: TextInputType.number,
@@ -599,9 +599,9 @@ class _charectorScreenState extends State<charectorScreen> {
                       child: Container(
                         width: statnumwith,
                         height: statnumhigh,
-                        padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                        padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                         alignment: Alignment.centerLeft,
-                        color: Color.fromARGB(255, 28, 155, 81),
+                        color: const Color.fromARGB(255, 28, 155, 81),
                         child: RichText(                            
                           text: TextSpan(
                             text: 'Speech', style: TextStyle(
@@ -613,10 +613,10 @@ class _charectorScreenState extends State<charectorScreen> {
                       top:550,
                       right: 10,                          
                       child: Container(
-                        margin: EdgeInsets.all(5),
+                        margin: const EdgeInsets.all(5),
                         width: 90,
                         height: 90,
-                        color: Color.fromARGB(255, 9, 6, 61),                                                        
+                        color: const Color.fromARGB(255, 9, 6, 61),                                                        
                         child: TextField(                              
                           maxLength: 3,
                           keyboardType: TextInputType.number,
@@ -647,9 +647,9 @@ class _charectorScreenState extends State<charectorScreen> {
                         Container(
                           width: hurtingwith,
                           height: hurtinghigh,
-                          padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                          padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                           alignment: Alignment.centerLeft,
-                          color: Color.fromARGB(255, 90, 61, 61),                           
+                          color: const Color.fromARGB(255, 90, 61, 61),                           
                         ),                         
                         Positioned.fill(
                           child: 
@@ -782,9 +782,9 @@ class _charectorScreenState extends State<charectorScreen> {
                               child: Container(
                                 width: 100,
                                 height: 100,
-                                padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                 alignment: Alignment.centerLeft,
-                                color: Color.fromARGB(255, 28, 155, 81),
+                                color: const Color.fromARGB(255, 28, 155, 81),
                                 
                               ),
                             
@@ -804,9 +804,9 @@ class _charectorScreenState extends State<charectorScreen> {
                               child: Container(
                                 width: 100,
                                 height: 100,
-                                padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                 alignment: Alignment.centerLeft,
-                                color: Color.fromARGB(255, 255, 0, 0),
+                                color: const Color.fromARGB(255, 255, 0, 0),
                                 
                               ),
                             
@@ -838,16 +838,16 @@ class _charectorScreenState extends State<charectorScreen> {
                           child:GestureDetector(
                             onTap: (){
                               setState(() {
-                                showDialog(context: context, builder: (_) => addInventory());
+                                showDialog(context: context, builder: (_) => const addInventory());
                               });                        
                             },
                             
                               child: Container(
                                 width: 100,
                                 height: 100,
-                                padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                 alignment: Alignment.centerLeft,
-                                color: Color.fromARGB(255, 28, 155, 81),
+                                color: const Color.fromARGB(255, 28, 155, 81),
                                 
                               ),
                           ),  
@@ -883,9 +883,9 @@ class _charectorScreenState extends State<charectorScreen> {
                           Container(
                             width: dicewith,
                             height: dicehigh,
-                            padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                            padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                             alignment: Alignment.centerLeft,
-                            color: Color.fromARGB(255, 90, 61, 61),                           
+                            color: const Color.fromARGB(255, 90, 61, 61),                           
                           ), 
                           
                           Positioned(
@@ -902,9 +902,9 @@ class _charectorScreenState extends State<charectorScreen> {
                                 child: Container(
                                   width: 100,
                                   height: 100,
-                                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                  padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                   alignment: Alignment.centerLeft,
-                                  color: Color.fromARGB(255, 155, 28, 28),
+                                  color: const Color.fromARGB(255, 155, 28, 28),
                                   
                                 ),
                               
@@ -925,9 +925,9 @@ class _charectorScreenState extends State<charectorScreen> {
                                 child: Container(
                                   width: 100,
                                   height: 100,
-                                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                  padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                   alignment: Alignment.centerLeft,
-                                  color: Color.fromARGB(255, 251, 255, 0),
+                                  color: const Color.fromARGB(255, 251, 255, 0),
                                   
                                 ),
                               
@@ -948,9 +948,9 @@ class _charectorScreenState extends State<charectorScreen> {
                                 child: Container(
                                   width: 100,
                                   height: 100,
-                                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                  padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                   alignment: Alignment.centerLeft,
-                                  color: Color.fromARGB(255, 0, 255, 55),
+                                  color: const Color.fromARGB(255, 0, 255, 55),
                                   
                                 ),
                               
@@ -971,9 +971,9 @@ class _charectorScreenState extends State<charectorScreen> {
                                 child: Container(
                                   width: 100,
                                   height: 100,
-                                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                  padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                   alignment: Alignment.centerLeft,
-                                  color: Color.fromARGB(255, 0, 247, 255),
+                                  color: const Color.fromARGB(255, 0, 247, 255),
                                   
                                 ),
                               
@@ -994,9 +994,9 @@ class _charectorScreenState extends State<charectorScreen> {
                                 child: Container(
                                   width: 100,
                                   height: 100,
-                                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                  padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                   alignment: Alignment.centerLeft,
-                                  color: Color.fromARGB(255, 17, 0, 255),
+                                  color: const Color.fromARGB(255, 17, 0, 255),
                                   
                                 ),
                               
@@ -1017,9 +1017,9 @@ class _charectorScreenState extends State<charectorScreen> {
                                 child: Container(
                                   width: 100,
                                   height: 100,
-                                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                  padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                   alignment: Alignment.centerLeft,
-                                  color: Color.fromARGB(255, 255, 0, 234),
+                                  color: const Color.fromARGB(255, 255, 0, 234),
                                   
                                 ),
                               
@@ -1041,9 +1041,9 @@ class _charectorScreenState extends State<charectorScreen> {
                                 child: Container(
                                   width: 100,
                                   height: 100,
-                                  padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                                  padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                                   alignment: Alignment.centerLeft,
-                                  color: Color.fromARGB(255, 255, 0, 149),
+                                  color: const Color.fromARGB(255, 255, 0, 149),
                                   
                                 ),
                             ),

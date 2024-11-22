@@ -32,18 +32,18 @@ class _mapSystemState extends State<mapSystem> {
                   Container(
                     width: 1000,
                     height: 1000,
-                    padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                     alignment: Alignment.center,
 
                   ),
                   Container(
                     width: 1000,
                     height: 1000,
-                    padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
+                    padding: const EdgeInsets.fromLTRB(40, 0, 0, 0),
                     alignment: Alignment.center,
-                    color: Color.fromARGB(255, 90, 61, 61), 
+                    color: const Color.fromARGB(255, 90, 61, 61), 
                     child: ElevatedButton(
-                      child: Text('pick File'),
+                      child: const Text('pick File'),
                       onPressed: () async{
                         final result = await FilePicker.platform.pickFiles(
                           allowMultiple: true,

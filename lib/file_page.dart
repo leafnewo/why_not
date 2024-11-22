@@ -4,10 +4,10 @@ class FilesPage extends StatefulWidget {
   final List<PlatformFile>files;
   final ValueChanged<PlatformFile> onOpenedFile;
   const FilesPage({
-    Key? key,
+    super.key,
     required this.files,
     required this.onOpenedFile,
-    }): super(key: key);
+    });
 
   @override
   State<FilesPage> createState() =>  _FilesPageState();
@@ -17,13 +17,13 @@ class  _FilesPageState extends State <FilesPage> {
   @override
   Widget build(BuildContext context)=>Scaffold(
     appBar: AppBar(
-      title: Text('all files'),
+      title: const Text('all files'),
       centerTitle: true,
     ),
     body: Center(
       child: GridView.builder(
-        padding: EdgeInsets.all(16),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        padding: const EdgeInsets.all(16),
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 8,
           crossAxisSpacing: 8,
@@ -42,11 +42,11 @@ class  _FilesPageState extends State <FilesPage> {
     final fileSize=
       mb>=1?'${mb.toStringAsFixed(2)}MB':'${kb.toStringAsFixed(2)}KB';
     final extension = file.extension??'none';
-    final color = Color.fromARGB(0, 214, 18, 18);
+    final color = const Color.fromARGB(0, 214, 18, 18);
     return InkWell(
       onTap: ()=> widget.onOpenedFile(file),
       child: Container(
-        padding: EdgeInsets.all(8),
+        padding: const EdgeInsets.all(8),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -60,7 +60,7 @@ class  _FilesPageState extends State <FilesPage> {
                 ),
                 child: Text(
                   '.$extension',
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -71,12 +71,12 @@ class  _FilesPageState extends State <FilesPage> {
             const SizedBox(height: 8,),
             Text(
               file.name,
-              style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
               overflow: TextOverflow.ellipsis,
             ),
             Text(
               fileSize,
-              style: TextStyle(fontSize: 16),
+              style: const TextStyle(fontSize: 16),
             ),
           ],
         ),

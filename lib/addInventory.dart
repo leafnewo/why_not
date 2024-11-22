@@ -193,7 +193,7 @@ class _addInventoryState extends State<addInventory> {
               margin: const EdgeInsets.all(10),
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 0, 170, 255),
+                color: const Color.fromARGB(255, 0, 170, 255),
                 borderRadius: BorderRadius.circular(10),
                 //shape: BoxShape.circle,
               ),
@@ -202,14 +202,14 @@ class _addInventoryState extends State<addInventory> {
               child: Container(
                 width: 500,
                 height: 100,
-                color: Color.fromARGB(255, 9, 6, 61),                                                        
+                color: const Color.fromARGB(255, 9, 6, 61),                                                        
                 child: TextField(                        
                   maxLength: 20,
                   keyboardType: TextInputType.text,
                   inputFormatters: <TextInputFormatter>[
                     FilteringTextInputFormatter.singleLineFormatter
                   ],
-                  style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold, color: const Color.fromARGB(174, 207, 37, 165)),
+                  style: const TextStyle(fontSize: 20,fontWeight: FontWeight.bold, color: Color.fromARGB(174, 207, 37, 165)),
                   controller: conItemSearch, 
                   onSubmitted: (val){
                     setState(() {
@@ -234,7 +234,7 @@ class _addInventoryState extends State<addInventory> {
                   margin: const EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 29, 110, 18),
+                    color: const Color.fromARGB(255, 29, 110, 18),
                     borderRadius: BorderRadius.circular(10),
                     ),
                   ),
@@ -259,7 +259,7 @@ class _addInventoryState extends State<addInventory> {
                       margin: const EdgeInsets.all(10),
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 0, 0),
+                        color: const Color.fromARGB(255, 255, 0, 0),
                         borderRadius: BorderRadius.circular(10),
                         ),
                       ),
@@ -286,7 +286,7 @@ class _addInventoryState extends State<addInventory> {
                       margin: const EdgeInsets.all(10),
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 247, 37, 37),
+                        color: const Color.fromARGB(255, 247, 37, 37),
                         borderRadius: BorderRadius.circular(10),
                         ),
                       ),
@@ -313,7 +313,7 @@ class _addInventoryState extends State<addInventory> {
                       margin: const EdgeInsets.all(10),
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 241, 88, 88),
+                        color: const Color.fromARGB(255, 241, 88, 88),
                         borderRadius: BorderRadius.circular(10),
                         ),
                       ),
@@ -340,7 +340,7 @@ class _addInventoryState extends State<addInventory> {
                       margin: const EdgeInsets.all(10),
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 240, 143, 143),
+                        color: const Color.fromARGB(255, 240, 143, 143),
                         borderRadius: BorderRadius.circular(10),
                         ),
                       ),
@@ -367,7 +367,7 @@ class _addInventoryState extends State<addInventory> {
                       margin: const EdgeInsets.all(10),
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 228, 186, 186),
+                        color: const Color.fromARGB(255, 228, 186, 186),
                         borderRadius: BorderRadius.circular(10),
                         ),
                       ),
@@ -394,7 +394,7 @@ class _addInventoryState extends State<addInventory> {
                       margin: const EdgeInsets.all(10),
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 255, 255),
+                        color: const Color.fromARGB(255, 255, 255, 255),
                         borderRadius: BorderRadius.circular(10),
                         ),
                       ),
@@ -427,7 +427,7 @@ class _addInventoryState extends State<addInventory> {
                       margin: const EdgeInsets.all(10),
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 255, 255, 255),
+                        color: const Color.fromARGB(255, 255, 255, 255),
                         borderRadius: BorderRadius.circular(10),
                         ),
                       ),
@@ -448,7 +448,7 @@ class _addInventoryState extends State<addInventory> {
                   margin: const EdgeInsets.all(10),
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(255, 17, 0, 255),
+                    color: const Color.fromARGB(255, 17, 0, 255),
                     borderRadius: BorderRadius.circular(10),
                     ),
                   ),
